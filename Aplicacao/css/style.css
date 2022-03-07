@@ -1,0 +1,173 @@
+/* -- Configurações Globais --*/
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+strong {
+    font-weight: 700;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    background-color: #000;
+}
+
+/* -- Header -- */
+
+header {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    padding: 10px 0;
+
+    z-index: 1;
+}
+
+.vermelho {
+    background-color: red;
+}
+
+header h1 {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header img {
+    width: 50px;
+    height: 50px;
+
+    margin-left: 50px;
+}
+
+/* -- Conteúdo Principal da Páginal -- */
+
+.eventos-gerais {
+    margin-top: 80px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.conjunto-de-botoes {
+
+    border: 3px solid #000;
+    border-radius: 5px;
+
+    width: 550px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    margin-left: 20px;
+}
+
+.log-eventos {
+    width: 500px;
+    height: 400px;
+
+    border: 3px solid #000;
+    border-radius: 5px;
+
+    overflow-y: scroll;
+}
+
+
+.log-eventos h3 {
+    font-size: 20px;
+    margin: 10px;
+}
+
+
+.registro-dos-eventos li {
+    font-size: 13px;
+    margin: 10px;
+}
+
+
+/* --- Botões --- */
+button {
+
+    /*height: 30px;*/
+    border-radius: 6px;
+    display: inline-block;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 6px 24px;
+    text-decoration: none;
+
+    margin: 20px;
+}
+
+.eventos-teclado {
+    box-shadow: 0px 1px 0px 0px #fff6af;
+    background: linear-gradient(to bottom, #ffec64 5%, #ffab23 100%);
+    background-color: #ffec64;
+    border: 1px solid #ffaa22;
+    color: #333333;
+    text-shadow: 0px 1px 0px #ffee66;
+}
+
+.eventos-teclado:hover {
+    background: linear-gradient(to bottom, #ffab23 5%, #ffec64 100%);
+    background-color: #ffab23;
+}
+
+.eventos-mouse {
+    box-shadow: 0px 1px 0px 0px #3dc21b;
+    background: linear-gradient(to bottom, #44c767 5%, #5cbf2a 100%);
+    background-color: #44c767;
+    border: 1px solid #18ab29;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #2f6627;
+}
+
+.eventos-mouse:hover {
+    background: linear-gradient(to bottom, #5cbf2a 5%, #44c767 100%);
+    background-color: #5cbf2a;
+}
+
+.eventos-teclado-mouse {
+    box-shadow: 0px 1px 0px 0px #9fb4f2;
+    background: linear-gradient(to bottom, #7892c2 5%, #476e9e 100%);
+    background-color: #7892c2;
+    border: 1px solid #4e6096;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #283966;
+}
+
+.eventos-teclado-mouse:hover {
+    background: linear-gradient(to bottom, #476e9e 5%, #7892c2 100%);
+    background-color: #476e9e;
+}
+
+.multiplos-eventos {
+    box-shadow: 0px 1px 0px 0px #cf866c;
+    background: linear-gradient(to bottom, #d0451b 5%, #bc3315 100%);
+    background-color: #d0451b;
+    border: 1px solid #942911;
+    color: #ffffff;
+    text-shadow: 0px 1px 0px #854629;
+}
+
+.multiplos-eventos:hover {
+    background: linear-gradient(to bottom, #bc3315 5%, #d0451b 100%);
+    background-color: #bc3315;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos JS</title>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!--Header Fixo da Aplicação-->
+    <header>
+        <h1>Eventos no JavaScript</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/2048px-Unofficial_JavaScript_logo_2.svg.png"
+            alt="logo-javascript">
+    </header>
+
+    <section class="eventos-gerais">
+        <div class="conjunto-de-botoes">
+            <button class="eventos-teclado"> Eventos Teclado</button>
+            <button class="eventos-mouse"> Eventos Mouse</button>
+            <button class="eventos-teclado-mouse"> Eventos Teclado e Mouse</button>
+            <button class="multiplos-eventos"> Multiplos Eventos</button>
+        </div>
+        <div>
+        <div class="log-eventos">
+            <div class="log-eventos__cabecalho">
+                <h3>Log de Eventos</h3>
+                <hr>
+            </div>
+
+            <div class="registro-dos-eventos">
+                <ul>
+
+                </ul>
+            </div>
+           
+        </div>
+        <button class="limpar-log" onclick="limparLog()"> Limpar Log de Eventos</button>
+        </div>
+        
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
