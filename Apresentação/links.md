@@ -77,7 +77,7 @@ Também é importante ressaltar que o método `addEventListener()` permite adici
 
 ---
 
-* O que é o objeto `Event` que é recebido na função de callback?
+* ## O que é o objeto `Event` que é recebido na função de callback?
 
 > O objeto `Event` representa um evento que ocorre no **DOM**, sendo o responsável por descrever o evento. 
 
@@ -113,7 +113,7 @@ O valor padrão é `false`, o qual seleciona a propagação do tipo ***bubbling*
 
 ---
 
-* O que faz a função `event.stopPropagation`?
+* ## O que faz a função `event.stopPropagation`?
 
 > O método `event.stopPropagation` previne que a propagação do mesmo evento seja chamada.
 
