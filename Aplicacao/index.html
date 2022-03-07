@@ -31,23 +31,41 @@
             <button class="multiplos-eventos"> Multiplos Eventos</button>
         </div>
         <div>
-        <div class="log-eventos">
-            <div class="log-eventos__cabecalho">
-                <h3>Log de Eventos</h3>
-                <hr>
-            </div>
+            <div class="log-eventos">
+                <div class="log-eventos__cabecalho">
+                    <h3>Log de Eventos</h3>
+                    <hr>
+                </div>
 
-            <div class="registro-dos-eventos">
-                <ul>
+                <div class="registro-dos-eventos">
+                    <ul>
 
-                </ul>
+                    </ul>
+                </div>
+
             </div>
-           
+            <button class="limpar-log" onclick="limparLog()"> Limpar Log de Eventos</button>
         </div>
-        <button class="limpar-log" onclick="limparLog()"> Limpar Log de Eventos</button>
-        </div>
-        
+
     </section>
+
+    <hr>
+    <h2>Propagação de Eventos</h2>
+    <section class="propagation">
+        <div class="bubbling-propagation">
+            <span>Bubbling:</span>
+            <div>
+                Clique Aqui!
+            </div>
+        </div>
+        <div class="capturing-propagation">
+            <span>Capturing:</span>
+            <div>
+                Clique Aqui!
+            </div>
+        </div>
+    </section>
+    <div class="stop-propagation">Stop propagation:<input type="checkbox" id="check"></div>
 
     <script src="js/script.js"></script>
 </body>

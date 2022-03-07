@@ -8,6 +8,13 @@ botaoEventosMouse = document.querySelector(".eventos-mouse");
 botaoEventosTecladoMouse = document.querySelector(".eventos-teclado-mouse");
 botaoEventosMultiplos = document.querySelector(".multiplos-eventos");
 
+/* Objetos de propagacao */
+divExternaBubblingPropagation = document.querySelector(".bubbling-propagation");
+divInternaBubblingPropagation = document.querySelector(".bubbling-propagation div");
+divExternaCapturingPropagation = document.querySelector(".capturing-propagation");
+divInternaCapturingPropagation = document.querySelector(".capturing-propagation div");
+
+
 /* Adicionando os eventos */
 
 // Botao teclado
@@ -42,6 +49,19 @@ botaoEventosMultiplos.addEventListener("keydown", (event) => {
         document.querySelector("header").classList.toggle("vermelho");
     }
 })
+
+
+
+// Bubbling Propagation
+divExternaBubblingPropagation.addEventListener("click", alertDivExterna)
+
+divInternaBubblingPropagation.addEventListener("click", alertDivInterna)
+
+// Capturing Propagation
+divExternaCapturingPropagation.addEventListener("click", alertDivExterna, true);
+divInternaCapturingPropagation.addEventListener("click", alertDivInterna, true);
+
+
 /* Conjunto de Funções */
 function exibirTeclaPressionada(event) {
     const teclaPressionada = event.key;
@@ -116,6 +136,21 @@ function exibirMoveMouse(event) {
     scrollUltimoElemento(logDeEventos);
 }
 
+function alertDivExterna(event){
+    alert("Div Externa!");
+
+    if (document.getElementById("check").checked) {
+        event.stopPropagation();
+      }
+}
+
+function alertDivInterna(event){
+    alert("Div Interna!");
+
+    if (document.getElementById("check").checked) {
+        event.stopPropagation();
+      }
+}
 
 function limparLog() {
     logDeEventos.innerHTML = "";
@@ -124,6 +159,6 @@ function limparLog() {
 function scrollUltimoElemento(ul) {
     const ultimoElemento = ul.querySelector("li:last-child");
 
-    ultimoElemento.scrollIntoView();
+    ultimoElemento.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
 }
 
